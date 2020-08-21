@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import HideSvg from "./hidesvg";
 
 interface ContactPropsValues {
   status: string;
@@ -6,10 +7,12 @@ interface ContactPropsValues {
 
 export default function Contact(props: any) {
   return (
-    <section
-      onClick={props.changeStatus}
-      id="contact-area"
-      className={`abs ${props.status}`}
-    ></section>
+    <section id="contact-area" className={`area ${props.status}`}>
+        <div className="section-wrapper">
+      <div onClick={props.changeStatus}>
+        <HideSvg />
+      </div>
+      </div>
+    </section>
   );
 }

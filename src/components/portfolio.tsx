@@ -1,15 +1,15 @@
 import React from "react";
+import HideSvg from "./hidesvg";
 
 interface PortfolioPropsValues {
-    items: number[],
 
 }
 
-export default function Portfolio(props: PortfolioPropsValues) {
-
-
-
-  return <section id="portfolio-area" className="abs ">
+export default function Portfolio(props: any) {
+  return <section id="portfolio-area" className="area">
+    <div onClick={props.changeStatus}>
+        <HideSvg />
+      </div>
 
   </section>;
 }

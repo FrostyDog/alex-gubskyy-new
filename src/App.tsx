@@ -24,9 +24,10 @@ function App() {
         <Button text="Portfolio" location="button-right" />
         <Button text="Discover" location="button-bottom" />
 
-        <Portfolio items={[1, 2, 3]} />
+        <Portfolio changeStatus={sectionStatusHandle} status={contactState} />
+        <Discover changeStatus={sectionStatusHandle} status={contactState}/>
+
         <Contact changeStatus={sectionStatusHandle} status={contactState} />
-        <Discover />
       </main>
     </div>
   );

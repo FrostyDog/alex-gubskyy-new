@@ -12,3 +12,19 @@
   }
 }
   
+@keyframes movingDownSlower {
+    from {
+      padding-top: 0%;
+    }
+  
+    50% {
+      padding-top: 3.5%;
+    }
+    
+  
+    to {
+      padding-top: 6%;
+    }
+  }
+    
+  

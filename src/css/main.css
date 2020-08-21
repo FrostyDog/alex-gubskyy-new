@@ -3,6 +3,7 @@
   position: relative;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 svg {
@@ -91,20 +92,74 @@ svg {
 
 /* areas */
 
-#contact-area {
-    background-color: #2070c0;
-    width: 30%;
-    left: -30%;
-    transition: all 1s ease-in-out;
-    height: 100%;
+.area {
+  transition: all 1s ease-in-out;
+  position: absolute;
 }
 
-#contact-area.open {
-    left: 0;
+.section-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-area {
+  background-color: #2070c0;
+  width: 30%;
+  left: -30%;
+  height: 100vh;
 }
 
 #portfolio-area {
+  background-color: #5d236b;
+  width: 100%;
+  left: -100%;
+  height: 100vh;
 }
 
 #discover-area {
+  background-color: #134d55;
+  width: 100%;
+  top: 100vh;
+  height: 30vh;
+}
+
+#discover-area.open {
+  bottom: 0;
+}
+
+#portfolio-area.open {
+  left: 0;
+}
+
+#contact-area.open {
+  left: 0;
+}
+
+.area svg {
+  position: absolute;
+  cursor: pointer;
+}
+
+#contact-area svg {
+  right: 5%;
+  top: 45.5%;
+  transform: rotate(90deg);
+}
+
+#portfolio-area svg {
+  left: 5%;
+  top: 45.5%;
+  transform: rotate(-90deg);
+}
+
+#discover-area svg {
+  right: 45.5%;
+  top: 5%;
+}
+
+#contact-area svg:hover {
+  animation: movingDownSlower 1500ms linear 0s infinite;
+  animation-iteration-count: infinite;
+  animation-name: movingDownSlower;
 }

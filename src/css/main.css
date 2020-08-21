@@ -1,0 +1,110 @@
+.App {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+svg {
+  height: 80px;
+  width: 100px;
+  color: white;
+  stroke-width: 0.5;
+  stroke: white;
+}
+
+/* button */
+.button-label {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.button-left {
+  top: 45.5%;
+  left: 4%;
+  transform: rotate(90deg);
+}
+
+.button-right {
+  top: 45.5%;
+  right: 4%;
+  transform: rotate(-90deg);
+}
+
+.button-bottom {
+  bottom: 4%;
+  left: 45.5%;
+}
+
+.button {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-bottom:hover svg {
+  animation: movingdown 1300ms linear 0.5s infinite;
+  animation-iteration-count: infinite;
+  animation-name: movingdown;
+}
+
+.button-left:hover svg {
+  animation: movingdown 1300ms linear 0.5s infinite;
+  animation-iteration-count: infinite;
+  animation-name: movingdown;
+}
+
+.button-right:hover svg {
+  animation: movingdown 1300ms linear 0.5s infinite;
+  animation-iteration-count: infinite;
+  animation-name: movingdown;
+}
+
+.button-label {
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  color: #707070;
+}
+
+/* .button-left:hover {
+  transform: rotate(90deg) translate(0px, -10px);
+} */
+
+/* .button-right:hover {
+  transform: rotate(-90deg) translate(0px, -10px);
+} */
+
+.button-left:hover .button-label {
+  transform: rotate(-90deg);
+  padding-left: 80px;
+}
+
+.button-right:hover .button-label {
+  transform: rotate(90deg);
+  padding-right: 100px;
+}
+
+.button-bottom:hover {
+  transform: translate(0, -10px);
+}
+
+/* areas */
+
+#contact-area {
+    background-color: #2070c0;
+    width: 30%;
+    left: -30%;
+    transition: all 1s ease-in-out;
+    height: 100%;
+}
+
+#contact-area.open {
+    left: 0;
+}
+
+#portfolio-area {
+}
+
+#discover-area {
+}

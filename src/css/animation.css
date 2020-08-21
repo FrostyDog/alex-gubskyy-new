@@ -1,0 +1,14 @@
+@keyframes movingdown {
+  from {
+    padding-top: 0%;
+  }
+
+  50% {
+    padding-top: 10%;
+  }
+
+  to {
+    padding-top: 20%;
+  }
+}
+  

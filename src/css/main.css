@@ -104,9 +104,9 @@ svg {
 }
 
 #contact-area {
-  background-color: #2070c0;
-  width: 30%;
-  left: -30%;
+  background-color: darkcyan;
+  width: 80%;
+  left: -80%;
   height: 100vh;
 }
 
@@ -125,11 +125,11 @@ svg {
 }
 
 #discover-area.open {
-    top: 70vh;
+  top: 70vh;
 }
 
 #portfolio-area.open {
-right: 0;
+  right: 0;
 }
 
 #contact-area.open {
@@ -139,22 +139,28 @@ right: 0;
 .area svg {
   position: absolute;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact-area svg {
   right: 5%;
   top: 45.5%;
   transform: rotate(90deg);
+  z-index: 3;
 }
 
 #portfolio-area svg {
-  left: 5%;
+  left: 1.5%;
   top: 5%;
   transform: rotate(-90deg);
 }
 
+#portfolio-area svg:hover {
+  left: 2%;
+}
+
 #discover-area svg {
-  right: 47.5%;
+  right: 48.5%;
   top: 5%;
 }
 
@@ -162,4 +168,52 @@ right: 0;
   animation: movingDownSlower 1500ms linear 0s infinite;
   animation-iteration-count: infinite;
   animation-name: movingDownSlower;
+}
+
+/* Contact */
+
+#contact-area .section-wrapper {
+  /* padding: 10% 15%; */
+  padding: 5% 5%;
+}
+
+#contact-area i {
+  font-size: 3.7rem;
+  color: rgb(179, 235, 26);
+  padding-right: 1rem;
+}
+
+#contact-area .section-wrapper a {
+  /* display: block; */
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4.7em;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 90%;
+  
+}
+
+#contact-area .section-wrapper .line {
+  position: absolute;
+  bottom: -1rem;
+  width: 0;
+  /* right: 15%;
+  left: 15%; */
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact-area .section-wrapper a:hover + .line {
+  width: 50%;
+}
+
+#contact-area .section-wrapper h3 {
+  letter-spacing: 0.3rem;
+}
+
+#contact-area .section-wrapper {
+  font-size: 1.5rem;
 }

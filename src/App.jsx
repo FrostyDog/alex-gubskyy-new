@@ -1,9 +1,9 @@
 import React from "react";
 import "./css/base.css";
-import Button from "./components/button";
-import Portfolio from "./components/portfolio";
-import Contact from "./components/contact";
-import Discover from "./components/discover";
+import Button from "./components/Button";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Discover from "./components/Discover";
 
 function App() {
   const [areasState, areasStateChange] = React.useState({
@@ -20,46 +20,31 @@ function App() {
     }
   };
 
+  const areas = [
+    ["Contact", "button-left"],
+    ["Portfolio", "button-right"],
+    ["Discover", "button-bottom"],
+  ];
+
   const sectionStatusHandle = (area) => {
-    let newStatus = !areasState[area];
+    const newStatus = !areasState[area];
     areasStateChange({ ...areasState, [area]: newStatus });
   };
 
   return (
     <div className="App">
       <main className="main">
-        <Button
-          text="Contact"
-          location="button-left"
-          changeStatus={() => sectionStatusHandle("contact")}
-        />
-        <Button
-          text="Portfolio"
-          location="button-right"
-          changeStatus={() => sectionStatusHandle("portfolio")}
-        />
-        <Button
-          text="Discover"
-          location="button-bottom"
-          changeStatus={() => sectionStatusHandle("discover")}
-        />
+        {areas.map((el) => (
+          <Button
+            text={`${el[0]}`}
+            location={`${el[1]}`}
+            changeStatus={() => sectionStatusHandle(el[0].toLowerCase())}
+          />
+        ))}
 
-        <Portfolio
-          trackStatus={statusTracking}
-          changeStatus={sectionStatusHandle}
-          status={areasState.portfolio}
-        />
-        <Discover
-          trackStatus={statusTracking}
-          changeStatus={sectionStatusHandle}
-          status={areasState.discover}
-        />
-
-        <Contact
-          trackStatus={statusTracking}
-          changeStatus={sectionStatusHandle}
-          status={areasState.contact}
-        />
+        <Portfolio trackStatus={statusTracking} changeStatus={sectionStatusHandle} status={areasState.portfolio} />
+        <Discover trackStatus={statusTracking} changeStatus={sectionStatusHandle} status={areasState.discover} />
+        <Contact trackStatus={statusTracking} changeStatus={sectionStatusHandle} status={areasState.contact} />
       </main>
     </div>
   );

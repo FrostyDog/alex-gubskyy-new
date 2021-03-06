@@ -1,5 +1,5 @@
 import React from "react";
-import HideSvg from "./hidesvg";
+import HideSvg from "./Hidesvg";
 
 export default function Discover(props) {
   let StatusClass = props.trackStatus(props.status);

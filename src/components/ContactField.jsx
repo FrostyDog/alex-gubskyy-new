@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Field(props) {
+export default function ContactField(props) {
   return (
     <div className="rel">
       {/* <h3 className=""> {props.name} </h3>

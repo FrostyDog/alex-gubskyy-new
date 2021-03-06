@@ -11,20 +11,17 @@
     padding-top: 20%;
   }
 }
-  
+
 @keyframes movingDownSlower {
-    from {
-      padding-top: 0%;
-    }
-  
-    50% {
-      padding-top: 3.5%;
-    }
-    
-  
-    to {
-      padding-top: 6%;
-    }
+  from {
+    padding-top: 0%;
   }
-    
-  
+
+  50% {
+    padding-top: 3.5%;
+  }
+
+  to {
+    padding-top: 6%;
+  }
+}

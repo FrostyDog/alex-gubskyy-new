@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Discover from "./components/Discover";
 
 function App() {
+
   const [areasState, areasStateChange] = React.useState({
     portfolio: false,
     discover: false,

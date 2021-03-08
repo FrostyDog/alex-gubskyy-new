@@ -14,7 +14,6 @@ export default function Portfolio(props) {
         fetchProjects(res.repos_url).then((data) => {
           data.pop();
           setDataForProjects(data);
-          console.log(data);
         });
       })
       .catch(() => {
@@ -35,15 +34,6 @@ export default function Portfolio(props) {
           classPositon={`position-${index + 1}`}
         />
       ))}
-
-      {/* <PortfolioItem
-        source="http://alexgubskyy.com"
-        background="https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-        classPositon="position-1"
-      />
-      <PortfolioItem classPositon="position-2" />
-      <PortfolioItem classPositon="position-3" />
-      <PortfolioItem classPositon="position-4" /> */}
     </section>
   );
 }

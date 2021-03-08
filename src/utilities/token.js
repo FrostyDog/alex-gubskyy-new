@@ -1,3 +1,3 @@
-const token = "425dd6d28c7be98dd5b192d40b0c44ffcf22ce9a";
+const token = process.env.REACT_APP_GH_TOKEN;
 
 export default token;

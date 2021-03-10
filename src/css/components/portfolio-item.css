@@ -13,6 +13,11 @@
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .portfolio-item:hover .background-overlay {

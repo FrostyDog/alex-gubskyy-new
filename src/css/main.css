@@ -24,17 +24,20 @@ svg {
   top: 45.5%;
   left: 4%;
   transform: rotate(90deg);
+  z-index: 1;
 }
 
 .button-right {
   top: 45.5%;
   right: 4%;
   transform: rotate(-90deg);
+  z-index: 1;
 }
 
 .button-bottom {
   bottom: 4%;
   left: 45.5%;
+  z-index: 1;
 }
 
 .button {
@@ -95,6 +98,7 @@ svg {
 .area {
   transition: all 1s ease-in-out;
   position: absolute;
+  z-index: 2;
 }
 
 .section-wrapper {
@@ -145,13 +149,15 @@ svg {
 #contact-area svg {
   right: 5%;
   top: 45.5%;
+  /* top: 5%; */
   transform: rotate(90deg);
   z-index: 3;
 }
 
 #portfolio-area svg {
   left: 1.5%;
-  top: 5%;
+  /* top: 5%; */
+  top: 45.5%;
   transform: rotate(-90deg);
 }
 
@@ -164,10 +170,25 @@ svg {
   top: 5%;
 }
 
+#discover-area svg:hover {
+  top: 6%;
+}
+
 #contact-area svg:hover {
-  animation: movingDownSlower 1500ms linear 0s infinite;
-  animation-iteration-count: infinite;
-  animation-name: movingDownSlower;
+  right: 6%;
+}
+
+/* Discover */
+
+#discover-area .main-text {
+  font-size: 3.5em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  z-index: -2;
+  align-items: center;
 }
 
 /* Contact */
@@ -178,7 +199,7 @@ svg {
 }
 
 #contact-area i {
-  font-size: 3.7rem;
+  font-size: 3.2rem;
   color: rgb(179, 235, 26);
   padding-right: 1rem;
 }
@@ -187,11 +208,10 @@ svg {
   /* display: block; */
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4.7em;
+  font-size: 4.2em;
   align-items: baseline;
   justify-content: flex-start;
   width: 90%;
-  
 }
 
 #contact-area .section-wrapper .line {
@@ -217,3 +237,4 @@ svg {
 #contact-area .section-wrapper {
   font-size: 1.5rem;
 }
+

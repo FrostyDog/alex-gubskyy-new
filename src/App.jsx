@@ -4,9 +4,9 @@ import Button from "./components/Button";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Discover from "./components/Discover";
+import ThreeCanvas from "./components/ThreeCanvas";
 
 function App() {
-
   const [areasState, areasStateChange] = React.useState({
     portfolio: false,
     discover: false,
@@ -42,6 +42,8 @@ function App() {
             changeStatus={() => sectionStatusHandle(el[0].toLowerCase())}
           />
         ))}
+
+        <ThreeCanvas />
 
         <Portfolio trackStatus={statusTracking} changeStatus={sectionStatusHandle} status={areasState.portfolio} />
         <Discover trackStatus={statusTracking} changeStatus={sectionStatusHandle} status={areasState.discover} />

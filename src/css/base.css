@@ -34,10 +34,9 @@ body {
   left: 0;
 }
 
-.abs{
+.abs {
   position: absolute;
 }
-
 
 .no-overflow {
   overflow: hidden;
@@ -255,6 +254,7 @@ a {
 p {
   color: white;
 }
-@import 'animation.css';
-@import 'main.css';
-@import 'mobile.css';
+@import "animation.css";
+@import "main.css";
+@import "./components/canvas.css";
+@import "mobile.css";

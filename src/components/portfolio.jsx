@@ -30,6 +30,7 @@ export default function Portfolio(props) {
       {dataForProjects.map((el, index) => (
         <PortfolioItem
           source={`${el.html_url}`}
+          title={`${el.name}`}
           background={`${randomPicUrl}?sig=${index}`}
           classPositon={`position-${index + 1}`}
         />

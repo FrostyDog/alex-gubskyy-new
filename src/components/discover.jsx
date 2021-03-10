@@ -9,6 +9,8 @@ export default function Discover(props) {
       <div onClick={() => props.changeStatus("discover")}>
         <HideSvg />
       </div>
+      <div class="main-text"> Nothing to discover :( <br />..yet</div>
+
     </section>
   );
 }

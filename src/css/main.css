@@ -160,14 +160,13 @@ svg {
   top: 45.5%;
   transform: rotate(-90deg);
 }
-
-#portfolio-area svg:hover {
-  left: 2%;
-}
-
 #discover-area svg {
   right: 48.5%;
   top: 5%;
+}
+
+#portfolio-area svg:hover {
+  left: 2%;
 }
 
 #discover-area svg:hover {
@@ -237,4 +236,3 @@ svg {
 #contact-area .section-wrapper {
   font-size: 1.5rem;
 }
-

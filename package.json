@@ -14,8 +14,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-three-fiber": "^5.3.19",
-    "three": "^0.126.1",
-    "typescript": "^3.9.7"
+    "three": "^0.126.1"
   },
   "scripts": {
     "start": "react-scripts start",

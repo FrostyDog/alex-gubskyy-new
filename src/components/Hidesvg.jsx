@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function HideSvg(): any {
+export default function HideSvg() {
     return(
         <svg
         viewBox="0 0 20 200"

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button(props: any) {
+export default function Button(props) {
   return (
     <div onClick={props.changeStatus} className={`button abs ${props.location} flex flex-align-center flex-column flex-justify-center`}>
       <div className="button-label">{props.text}</div>

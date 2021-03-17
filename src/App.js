@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/base.css";
 import Button from "./components/Button";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "src/components/Portfolio";
 import Contact from "./components/Contact";
 import Discover from "./components/Discover";
 import ThreeCanvas from "./components/Three/ThreeCanvas";
